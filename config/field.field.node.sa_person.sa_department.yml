@@ -4,7 +4,7 @@ dependencies:
   config:
     - field.storage.node.sa_department
     - node.type.sa_person
-    - taxonomy.vocabulary.department
+    - taxonomy.vocabulary.sa_department
 id: node.sa_person.sa_department
 field_name: sa_department
 entity_type: node

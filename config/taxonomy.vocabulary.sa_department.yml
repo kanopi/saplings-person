@@ -18,6 +18,6 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: false
 name: Department
-vid: department
+vid: sa_department
 description: 'Provides a way to categorize Persons by department.'
 weight: 0
