@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.sa_education
+    - node.type.person
+  module:
+    - text
+id: node.person.sa_education
+field_name: sa_education
+entity_type: node
+bundle: person
+label: Education
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long
