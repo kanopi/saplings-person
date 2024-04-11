@@ -13,6 +13,10 @@ dependencies:
     - field.field.node.sa_person.sa_headshot
     - field.field.node.sa_person.sa_last_name
     - field.field.node.sa_person.sa_phone
+    - field.field.node.sa_person.sa_robots
+    - field.field.node.sa_person.sa_seo_description
+    - field.field.node.sa_person.sa_seo_image
+    - field.field.node.sa_person.sa_seo_page_title
     - field.field.node.sa_person.sa_social_media_links
     - node.type.sa_person
   module:
@@ -61,12 +65,16 @@ content:
     weight: 2
     region: content
 hidden:
+  links: true
+  published_at: true
   sa_address: true
   sa_biography: true
   sa_education: true
   sa_email: true
   sa_fax: true
   sa_phone: true
+  sa_robots: true
+  sa_seo_description: true
+  sa_seo_image: true
+  sa_seo_page_title: true
   sa_social_media_links: true
-  links: true
-  published_at: true

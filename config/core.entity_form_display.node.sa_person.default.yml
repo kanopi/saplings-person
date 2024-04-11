@@ -12,6 +12,10 @@ dependencies:
     - field.field.node.sa_person.sa_headshot
     - field.field.node.sa_person.sa_last_name
     - field.field.node.sa_person.sa_phone
+    - field.field.node.sa_person.sa_robots
+    - field.field.node.sa_person.sa_seo_description
+    - field.field.node.sa_person.sa_seo_image
+    - field.field.node.sa_person.sa_seo_page_title
     - field.field.node.sa_person.sa_social_media_links
     - node.type.sa_person
   module:
@@ -19,6 +23,7 @@ dependencies:
     - field_group
     - link
     - media_library
+    - media_library_edit
     - path
     - publication_date
     - telephone
@@ -29,6 +34,7 @@ third_party_settings:
       children:
         - group_summary
         - group_info
+        - group_advanced_seo
       label: Administration
       region: content
       parent_name: ''
@@ -79,6 +85,26 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
+    group_advanced_seo:
+      children:
+        - sa_seo_page_title
+        - sa_seo_description
+        - sa_seo_image
+        - sa_robots
+      label: 'Advanced SEO'
+      region: content
+      parent_name: group_administration
+      weight: 22
+      format_type: tab
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        formatter: closed
+        description: ''
+        required_fields: true
+_core:
+  default_config_hash: l4U7fMh5GnaQEGJFmHtFE_GMqs--I3xwwYWzL3ZZUcM
 id: node.sa_person.default
 targetEntityType: node
 bundle: sa_person
@@ -87,6 +113,30 @@ content:
   created:
     type: datetime_timestamp
     weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_on:
+    type: datetime_timestamp
+    weight: 13
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  publish_state:
+    type: options_select
+    weight: 15
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  published_at:
+    type: publication_date_timestamp
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -168,6 +218,39 @@ content:
     settings:
       placeholder: ''
     third_party_settings: {  }
+  sa_robots:
+    type: string_textfield
+    weight: 11
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  sa_seo_description:
+    type: string_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  sa_seo_image:
+    type: media_library_widget
+    weight: 10
+    region: content
+    settings:
+      media_types: {  }
+    third_party_settings:
+      media_library_edit:
+        show_edit: '1'
+  sa_seo_page_title:
+    type: string_textfield
+    weight: 8
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
   sa_social_media_links:
     type: link_default
     weight: 16
@@ -176,30 +259,6 @@ content:
       placeholder_url: ''
       placeholder_title: ''
     third_party_settings: {  }
-  path:
-    type: path
-    weight: 7
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  publish_on:
-    type: datetime_timestamp
-    weight: 10
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  publish_state:
-    type: options_select
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  published_at:
-    type: publication_date_timestamp
-    weight: 8
-    region: content
-    settings: {  }
-    third_party_settings: {  }
   simple_sitemap:
     weight: 6
     region: content
@@ -207,7 +266,7 @@ content:
     third_party_settings: {  }
   status:
     type: boolean_checkbox
-    weight: 3
+    weight: 2
     region: content
     settings:
       display_label: true
@@ -231,7 +290,7 @@ content:
       placeholder: ''
     third_party_settings: {  }
   url_redirects:
-    weight: 9
+    weight: 12
     region: content
     settings: {  }
     third_party_settings: {  }
