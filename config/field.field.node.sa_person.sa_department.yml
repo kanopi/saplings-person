@@ -19,7 +19,7 @@ settings:
   handler: 'default:taxonomy_term'
   handler_settings:
     target_bundles:
-      department: department
+      sa_department: sa_department
     sort:
       field: name
       direction: asc
