@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_education
-    - node.type.person
+    - node.type.sa_person
   module:
     - text
-id: node.person.sa_education
+id: node.sa_person.sa_education
 field_name: sa_education
 entity_type: node
-bundle: person
+bundle: sa_person
 label: Education
 description: ''
 required: false

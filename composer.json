@@ -1,0 +1,16 @@
+{
+  "name": "kanopi/saplings-person",
+  "description": "Configuration for Saplings Person",
+  "type": "drupal-recipe",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+      {
+          "name": "Taylor Wills",
+          "homepage": "https://kanopi.com",
+          "role": "Maintainer"
+      }
+  ],
+  "require": {
+      "drupal/address": "*"
+  }
+}

@@ -2,18 +2,18 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.person.sa_address
-    - field.field.node.person.sa_biography
-    - field.field.node.person.sa_department
-    - field.field.node.person.sa_education
-    - field.field.node.person.sa_email
-    - field.field.node.person.sa_fax
-    - field.field.node.person.sa_first_name
-    - field.field.node.person.sa_headshot
-    - field.field.node.person.sa_last_name
-    - field.field.node.person.sa_phone
-    - field.field.node.person.sa_social_media_links
-    - node.type.person
+    - field.field.node.sa_person.sa_address
+    - field.field.node.sa_person.sa_biography
+    - field.field.node.sa_person.sa_department
+    - field.field.node.sa_person.sa_education
+    - field.field.node.sa_person.sa_email
+    - field.field.node.sa_person.sa_fax
+    - field.field.node.sa_person.sa_first_name
+    - field.field.node.sa_person.sa_headshot
+    - field.field.node.sa_person.sa_last_name
+    - field.field.node.sa_person.sa_phone
+    - field.field.node.sa_person.sa_social_media_links
+    - node.type.sa_person
   module:
     - address
     - sa_group
@@ -24,7 +24,7 @@ dependencies:
     - telephone
     - text
 third_party_settings:
-  sa_group:
+  field_group:
     group_administration:
       children:
         - group_summary
@@ -79,9 +79,9 @@ third_party_settings:
         formatter: closed
         description: ''
         required_fields: true
-id: node.person.default
+id: node.sa_person.default
 targetEntityType: node
-bundle: person
+bundle: sa_person
 mode: default
 content:
   created:

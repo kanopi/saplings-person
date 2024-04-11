@@ -3,12 +3,12 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_department
-    - node.type.person
+    - node.type.sa_person
     - taxonomy.vocabulary.department
-id: node.person.sa_department
+id: node.sa_person.sa_department
 field_name: sa_department
 entity_type: node
-bundle: person
+bundle: sa_person
 label: Department
 description: ''
 required: false

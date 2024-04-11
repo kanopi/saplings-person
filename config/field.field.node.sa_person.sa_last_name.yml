@@ -3,11 +3,11 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_last_name
-    - node.type.person
-id: node.person.sa_last_name
+    - node.type.sa_person
+id: node.sa_person.sa_last_name
 field_name: sa_last_name
 entity_type: node
-bundle: person
+bundle: sa_person
 label: 'Last Name'
 description: ''
 required: false

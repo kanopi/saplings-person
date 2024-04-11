@@ -3,7 +3,7 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - node.type.person
+    - node.type.sa_person
   module:
     - node
     - user
@@ -144,7 +144,7 @@ display:
           entity_field: type
           plugin_id: bundle
           value:
-            person: person
+            sa_person: sa_person
       style:
         type: default
       row:

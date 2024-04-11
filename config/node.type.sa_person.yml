@@ -23,7 +23,7 @@ third_party_settings:
     unpublish_required: false
     unpublish_revision: false
 name: Person
-type: person
+type: sa_person
 description: ''
 help: ''
 new_revision: true

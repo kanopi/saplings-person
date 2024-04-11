@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.sa_phone
+    - node.type.sa_person
+  module:
+    - telephone
+id: node.sa_person.sa_phone
+field_name: sa_phone
+entity_type: node
+bundle: sa_person
+label: Phone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: telephone

@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_social_media_links
-    - node.type.person
+    - node.type.sa_person
   module:
     - link
-id: node.person.sa_social_media_links
+id: node.sa_person.sa_social_media_links
 field_name: sa_social_media_links
 entity_type: node
-bundle: person
+bundle: sa_person
 label: 'Social Media Links'
 description: ''
 required: false

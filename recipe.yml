@@ -1,0 +1,33 @@
+name: 'Saplings - Person'
+description: 'Configuration for Saplings Person'
+type: 'Site'
+install:
+  # Contrib.
+  - address
+  - schema_event
+config:
+  actions:
+    # Set permissions for anonymous role.
+    user.role.anonymous:
+      ensure_exists:
+        id: anonymous
+      grantPermissions:
+        - 'access_unpublished node sa_person'
+    # Set permissions for content editor role.
+    user.role.content_editor:
+      ensure_exists:
+        id: content_editor
+      grantPermissions:
+        - 'access_unpublished node sa_person'
+        - 'clone sa_person content'
+        - 'create sa_person content'
+        - 'create terms in sa_person_category'
+        - 'delete own sa_person content'
+        - 'delete sa_person revisions'
+        - 'edit any sa_person content'
+        - 'edit own sa_person content'
+        - 'edit terms in sa_person_category'
+        - 'revert sa_person revisions'
+        - 'set sa_person published on date'
+        - 'view any unpublished sa_person content'
+        - 'view sa_person revisions'

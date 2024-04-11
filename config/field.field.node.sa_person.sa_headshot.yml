@@ -4,11 +4,11 @@ dependencies:
   config:
     - field.storage.node.sa_headshot
     - media.type.image
-    - node.type.person
-id: node.person.sa_headshot
+    - node.type.sa_person
+id: node.sa_person.sa_headshot
 field_name: sa_headshot
 entity_type: node
-bundle: person
+bundle: sa_person
 label: Headshot
 description: ''
 required: false

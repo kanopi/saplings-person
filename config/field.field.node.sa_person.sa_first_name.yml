@@ -2,19 +2,17 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.sa_phone
-    - node.type.person
-  module:
-    - telephone
-id: node.person.sa_phone
-field_name: sa_phone
+    - field.storage.node.sa_first_name
+    - node.type.sa_person
+id: node.sa_person.sa_first_name
+field_name: sa_first_name
 entity_type: node
-bundle: person
-label: Phone
+bundle: sa_person
+label: 'First Name'
 description: ''
 required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
-field_type: telephone
+field_type: string

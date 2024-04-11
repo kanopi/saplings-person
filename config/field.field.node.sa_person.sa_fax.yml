@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_fax
-    - node.type.person
+    - node.type.sa_person
   module:
     - telephone
-id: node.person.sa_fax
+id: node.sa_person.sa_fax
 field_name: sa_fax
 entity_type: node
-bundle: person
+bundle: sa_person
 label: Fax
 description: ''
 required: false

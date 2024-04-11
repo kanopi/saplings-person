@@ -3,13 +3,13 @@ status: true
 dependencies:
   config:
     - field.storage.node.sa_address
-    - node.type.person
+    - node.type.sa_person
   module:
     - address
-id: node.person.sa_address
+id: node.sa_person.sa_address
 field_name: sa_address
 entity_type: node
-bundle: person
+bundle: sa_person
 label: Address
 description: ''
 required: false
