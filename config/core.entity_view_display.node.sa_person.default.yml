@@ -19,6 +19,7 @@ dependencies:
     - element_class_formatter
     - link
     - text
+    - telephone
     - user
 id: node.sa_person.default
 targetEntityType: node

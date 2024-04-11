@@ -5,6 +5,7 @@ install:
   # Contrib.
   - address
   - schema_event
+  - telephone
 config:
   actions:
     # Set permissions for anonymous role.
