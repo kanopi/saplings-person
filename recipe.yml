@@ -4,7 +4,7 @@ type: 'Site'
 install:
   # Contrib.
   - address
-  - schema_event
+  - schema_person
   - telephone
 config:
   actions:

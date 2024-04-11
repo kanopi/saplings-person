@@ -12,6 +12,10 @@ dependencies:
     - field.field.node.sa_person.sa_headshot
     - field.field.node.sa_person.sa_last_name
     - field.field.node.sa_person.sa_phone
+    - field.field.node.sa_person.sa_robots
+    - field.field.node.sa_person.sa_seo_description
+    - field.field.node.sa_person.sa_seo_image
+    - field.field.node.sa_person.sa_seo_page_title
     - field.field.node.sa_person.sa_social_media_links
     - node.type.sa_person
   module:
@@ -19,7 +23,6 @@ dependencies:
     - element_class_formatter
     - link
     - text
-    - telephone
     - user
 id: node.sa_person.default
 targetEntityType: node
@@ -120,3 +123,7 @@ content:
 hidden:
   links: true
   published_at: true
+  sa_robots: true
+  sa_seo_description: true
+  sa_seo_image: true
+  sa_seo_page_title: true
